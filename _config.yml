@@ -1,38 +1,36 @@
-# Site settings
-title: "Mohammed Amarnah"
-email: m.amarnah@gmail.com
-description: "Computational Neuroscience and Music"
-baseurl: ""
-url: "http://mohammedamarnah.github.io/"
-title_description: "I work on finding a point that lays in the intersection of Neuroscience, Computer Science, and Electrical Engineering. I always like to remember a quote, said by J. M. Coetzee, in his acceptance speech after winning the Nobel prize in literature, 2003. He said: \"And for whom, anyway, do we do the things that lead to Nobel prizes if not to our mothers.\""
-title_image: "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/29595469_10209386620702958_4851043709207323271_n.jpg?_nc_cat=0&oh=e0633a69652fa3013d434c9ed9d5bf92&oe=5B8E0005"
-google_analytics: "UA-20365477-4"
-disqus_account: 
-github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
-post_limit: 5
+# site settings
+title: Forty
+subtitle: by HTML5 UP
+email: youremailaddress@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
 
-# Social usernames/URLs
-twitter_username: m_amarnah
-github_username:  mohammedamarnah
-instagram_username: m.amarnah
-reddit_username:
-linkedin_link: https://www.linkedin.com/in/mohammed-amarnah-595006a5/
-google_plus_link: https://plus.google.com/+MohammedAmarnah
-stackoverflow_link:
-xing_link:
-facebook_link: https://www.facebook.com/m.amarnah15
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
 
-# Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
 
-# Build settings
+# build settings
 markdown: kramdown
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-permalink: pretty
-exclude: [vendor]
+sass:
+  style: compressed
