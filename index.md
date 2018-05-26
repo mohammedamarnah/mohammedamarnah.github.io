@@ -1,10 +1,11 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hi, my name is Forty'
+landing-title: 'Hi, my name is Mohammed'
 description: null
 image: null
 author: null
 ---
 
-Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
+I work on finding a point that lays in the intersection of Neuroscience, Computer Science, and Electrical Engineering. 
+I always like to remember a quote, said by J. M. Coetzee, in his acceptance speech after winning the Nobel prize in literature, 2003. He said: "And for whom, anyway, do we do the things that lead to Nobel prizes if not to our mothers."
