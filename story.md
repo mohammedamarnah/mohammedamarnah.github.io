@@ -1,7 +1,7 @@
 ---
-title: Landing
+title: My Story
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: 'I am a Software Engineer, programming since I was 14<br />I like Machine Learning, Computational Neuroscience and Mathematics.'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
