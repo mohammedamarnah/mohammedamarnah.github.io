@@ -1,36 +1,29 @@
-# site settings
-title: MOHAMMED
-subtitle: AMARNAH
-email: m.amarnah@gmail.com
-description: I am a Software Engineer, <br/>and I do Machine Learning and Computational Neuroscience research.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address: Ali Al-Mulaifi Street
-city: Amman
-state:
-zip_code: 66231
-country: Jordan
-phone: (962) 79-804-8473
+# Site Build Settings
 
-# homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 5
+# Jekyll-paginate-v2 configuration
+#  pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
 
-# social settings
-500px_url:
-facebook_url: https://www.facebook.com/m.amarnah15
-github_url: https://github.com/mohammedamarnah/
-gitlab_url:
-googleplus_url: https://plus.google.com/u/0/+MohammedAmarnah
-instagram_url: https://instagram.com/m.amarnah
-linkedin_url: https://www.linkedin.com/in/mohammed-amarnah-595006a5/
-pinterest_url:
-slack_url:
-twitter_url: https://twitter.com/m_amarnah
+# jekyll-paginate configuration
+paginate:            5
 
-# build settings
-markdown: kramdown
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-sass:
-  style: compressed
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           '∃ Convex Human'
+description:	       'A blog on Optimization and Approximation Theory'
+author:              'Mohammed Amarnah'
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml
