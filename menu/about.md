@@ -3,25 +3,40 @@ layout: page
 title: Welcome to Convex Human!
 ---
 
-Convex Human is a blog that discusses mathematical insights, and highlights great ideas, all in the field of Optimization, Approximation Theory and Numerical Analysis. At the time I am writing this, the blog is just in its first days, so there are not so many topics. But you are supposed to find blog posts on other topics that I find interesting and feel like I want to share them with the world.
+Convex Human is a blog that discusses different ideas related to Computer Science, Mathematics, System Design and Architecture.
 
 ## Who is Convex Human?
-My name is Mohammed Amarnah, I am a Computer Science student, graduating from PSUT, Jordan. My interest in Computer Science started when I was 14, where I developed my first Windows Phone mobile app, which was an event app for TEDxAlFaisalU. Even though the app was very basic and with almost no functionality other than moving between windows, I fell in love with programming.
+My name is Mohammed Amarnah. I am a Computer Science graduate, a Software Engineer, and a lifetime student. My interest in Computer Science started when I was 14 years old. Programming led my interest to several other fields, and science in general. I was a participant of several science fairs and programming competitions ever since I was in high school. From robotics, to scientific research and competitive programming competitions, all curated a deeper appreciation of science and math in me.
 
-After that and in my final school years and while moving from school to university, I participated in several science fairs and competitions. One of the most interesting experiences, were the First Lego League Robotics Championship. It started in my 11th grade. We won the programming award, locally and regionally, 3 consecutive times, and 5 times overall. In my first undergraduate year, I became a coach for my high school's FLL team. We won the 2nd place Champion's award locally in Jordan, regioanlly in Lebanon, and internationally in Tenerife, Spain.
+#
 
-![](../assets/img/robotics1.jpg)
+## Professional Experience
+### Jawaker
+#### Software Engineer
+#### February 2018 - Present
+* Designed and implemented several services in a distributed service-oriented architecture, using a stack that included: Clojure, Ruby on Rails, PostgreSQL, Redis, Cassandra, and other technologies.
+* Developed a strong understanding of both service-oriented and microservice architectures, along with how and when to use them.
+* Collaborated with the team on scaling our architecture to handle 5x the traffic during quarantine.
+* Led the technical design and implementation of several games and products.
 
-In all the past years, I liked competitions and robotics and so on, but I didn't feel the same for academia and research. Maybe because I thought it was really hard (it is hard, actually!) or maybe because I never tried to get into the theortical part of stuff.
+### Mixed Dimensions
+#### Research and Development Engineering Intern
+#### March 2017 - October 2017
+* Worked on 3D model rendering and computational geometry algorithms using C++ with openCV.
+* Developed a good acquaintance with the CUDA library for optimally rendering 3D models using GPUs.
+* Assisted the robotics team working on a robotic arm to automate the process of painting 3D models using ROS and Gazebo.
 
-In the 2nd year in my college, I enrolled in an Electronics course, and everything in there changed me a lot. Electricity and Electronics makes you look at Computer Science in a completely different way, yet it stays extremely similar to the mindset of a computer scientist.
+#
 
-As my graduation project from that course, I built an Electroencephalogram recorder, with basic components and without any microcontrollers. I also built a small PID line following robot, without the use of any programmable components.
+## Tech Stack
+### Systems and Web
+Clojure, Ruby, C#, Javascript and C/C++.
 
-## My Interest In Mathematics and Machine Learning
+### Frameworks and Tools
+Ruby on Rails, Unity 3D and React Native.
 
-Since then, I knew that theoretical science is something I would like to dig deep in. I started reading about Machine Learning, but this time I was reading from a completely different perspective. This time, I was reading research papers and text books. I enrolled in Coursera’s Stanford Machine Learning course by the great Andrew Ng, and after finishing it, I decided to enroll in Udacity’s Self Driving Car Engineer nano-degree.
-While approaching my final university years, I had to decide what to do as my graduation project. I started with a very interesting where I researched the possibilities of detecting brain tumors using EEG data only and without any MRI or CT scans. But because there wasn’t any mentor at my university who accepted to mentor me on this project, I decided to build the first open source self driving car. And it happened! CBM64, is now the first arabic open source self driving car (available on my GitHub, and your contributions are very welcome!)
+### Databases and Memory
+PostgreSQL, Redis, Memcached and Cassandra.
 
-## Curriculum Vitae
-You can find my latest cv [here]().
+### Machine Learning and Computer Vision
+OpenCV and Tensorflow.
