@@ -21,7 +21,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           '∃ Convex Human'
-description:	       'A blog on Optimization and Approximation Theory'
+description:	       'A blog on computational and abstract ideas'
 author:              'Mohammed Amarnah'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
