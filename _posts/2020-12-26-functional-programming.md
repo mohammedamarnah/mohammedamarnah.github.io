@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Functional Programming
-description: 
-image: 
+description: A concise overview of 3 rules that make functional programs
+image: lambda.png
 ---
 
 So you have decided to learn functional programming, great! You visit the first website, read a book, watch a video, and maybe listen to a podcast; when suddenly you realize that functional programming is a completely different kind of programming. That it is a fundamental change in the way you see and interact with computer programs. And maybe it’ll even require you to almost forget about everything related to computer programs!
