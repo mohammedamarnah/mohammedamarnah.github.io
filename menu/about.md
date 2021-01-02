@@ -8,8 +8,6 @@ Convex Human is a blog that discusses different ideas related to Computer Scienc
 ## Who is Convex Human?
 My name is Mohammed Amarnah. I am a Computer Science graduate, a Software Engineer, and a lifetime student. My interest in Computer Science started when I was 14 years old. Programming led my interest to several other fields, and science in general. I was a participant of several science fairs and programming competitions ever since I was in high school. From robotics, to scientific research and competitive programming competitions, all curated a deeper appreciation of science and math in me.
 
-#
-
 ## Professional Experience
 ### Jawaker
 #### Software Engineer
@@ -25,8 +23,6 @@ My name is Mohammed Amarnah. I am a Computer Science graduate, a Software Engine
 * Worked on 3D model rendering and computational geometry algorithms using C++ with openCV.
 * Developed a good acquaintance with the CUDA library for optimally rendering 3D models using GPUs.
 * Assisted the robotics team working on a robotic arm to automate the process of painting 3D models using ROS and Gazebo.
-
-#
 
 ## Tech Stack
 ### Systems and Web
