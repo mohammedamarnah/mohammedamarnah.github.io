@@ -5,7 +5,7 @@ description: Defining the infinite abstraction in your memory
 image: lazy-inf-3.jpg
 ---
 
-One of the most beautiful concepts that functional programming was built upon, is ***lazy evaluation***. Lazy evaluation is a common technique not only in functional languages but in many other programming languages as well but it's much more efficient to do lazy evaluation in functional languages though because we know that there aren't any side effects. Some languages are naturally lazy, and the others are only lazy when you need them to be.
+One of the most beautiful concepts that functional programming was built upon, is ***lazy evaluation***. Lazy evaluation is a common technique not only in functional languages but in many other programming languages as well but it's much more efficient to do in functional languages because we know that there aren't any side effects. Some languages are naturally lazy, and the others are only lazy when you need them to be.
 
 But what exactly is lazy evaluation?
 
