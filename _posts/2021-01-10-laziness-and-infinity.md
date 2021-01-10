@@ -183,13 +183,13 @@ I would like to note something that was mentioned before, and that is Clojure is
 
 We just saw some profound power of a different and special kind of programming techniques: Lazy Evaluation. The opposite of that is usually called Eager Evaluation, or Strict Evaluation.
 
-What I find most interesting in the idea of lazy evaluation of expressions is that you can basically ask your program to save the ***abstraction*** of the list instead of its values. You basically save the "formula" instead of evaluating it. And that is basically separating how to generate the value — the code that you have to type in that generates that value — from when or whether you run it because you might not need to run that code. That, in my opinion, is higher-level functional programming at it's finest.
+What I find most interesting in the idea of lazy evaluation of expressions is that you can basically ask your program to save the ***abstraction*** of the list instead of its values. You save the "formula" of a function instead of evaluating it. You separate how to generate the value — the code that you have to type in that generates that value — from when or whether you run it because you might not need to run that code. That, in my opinion, is higher-level functional programming at it's finest.
 
 Of course, you might think that an infinite list of primes is not that practical, and you might not need it in an actual production-level system, but you'd surprised at how practical the concept of lazy evaluation is, and how much it optimizes your code's runtime and memory usage.
 
 ## Resources
 
-This blog is a way for me to strengthen my knowledge in a topic that I want to learn. It is a shorter version of the resources mentioned. Here are the resources that this blog post was written upon, and it would be greatly useful if you want to dive in deeper in the subject and learn more.
+This blog is a way for me to strengthen my knowledge in a topic that I want to learn. Here are the resources that this blog post was written upon, and it would be greatly useful if you want to dive deeper in the subject and learn more.
 
 - [Clojure docs](https://clojuredocs.org/)
 - [Being lazy in Clojure](http://noobtuts.com/clojure/being-lazy-in-clojure)
