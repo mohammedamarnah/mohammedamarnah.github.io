@@ -32,7 +32,7 @@ user=> array
 
 ## [Lazy Sequences](https://clojuredocs.org/clojure.core/lazy-seq)
 
-The very magical thing appears here: 
+The very magical thing appears here:
 
 ```clojure
 user=> (def infinite-list (range))
@@ -40,7 +40,7 @@ user=> (def infinite-list (range))
 
 We, ladies and gentlemen, just defined an **infinite list,** how interesting? I know this seems surreal, but let's have a look at how actually very practical that would be.
 
-This is called a `lazy sequence`. How did that happen? How did we define an *infinite list*? It's as we said because the function `(range)` didn't actually get executed. It is waiting for us to call it so that it gets executed. **If you call `array` at that point, it'll cause an infinite loop that won't stop.** 
+This is called a `lazy sequence`. How did that happen? How did we define an *infinite list*? It's as we said because the function `(range)` didn't actually get executed. It is waiting for us to call it so that it gets executed. **If you call `array` at that point, it'll cause an infinite loop that won't stop.**
 
 But you can do a lot of operations on lazy sequences. For example, here's how we get the first 10 integer numbers of the infinite list we just defined:
 
@@ -78,7 +78,7 @@ So let's a define a function `factors` that takes a number `n` and returns a lis
 
 ```clojure
 user=> (defn factors [n]
-					(filter #(zero? (mod n %)) (range 1 (+ n 1))))
+         (filter #(zero? (mod n %)) (range 1 (+ n 1))))
 
 user=> (factors 15)
 (1 3 5 15)
@@ -89,11 +89,11 @@ user=> (factors 7)
 
 So this takes the list `(range 1 (+ n 1))` that returns the integers from 1 → n exactly, and filters all these numbers that matches the criteria: `(n mod x == 0)`.
 
-Now we can define a function `prime?` that determines if the a number `n` is prime, and that would be only if the list of its factors is exactly `[1, n]`.
+Now we can define a function `prime?` that determines if the number `n` is a prime, and that would be only if the list of its factors is exactly `[1, n]`.
 
 ```clojure
 user=> (defn prime? [n]
-					(= (factors n) [1 n]))
+         (= (factors n) [1 n]))
 ```
 
 Now the only thing left for us is to define the infinite list of prime integers is to filter the infinite list of integers using our `prime?` function.
@@ -108,13 +108,13 @@ And that's it! We just defined the **infinite** list of all prime integers! Look
 
 ```clojure
 (defn factors [n]
-	(filter #(zero? (mod n %)) (range 1 (inc n))))
+  (filter #(zero? (mod n %)) (range 1 (inc n))))
 
 (defn prime? [n]
-	(= (factors n) [1 n]))
+  (= (factors n) [1 n]))
 
 (def all-primes
-	(filter prime? (range)))
+  (filter prime? (range)))
 ```
 
 One thing that remains, though, is how long does it take to evaluate the first n prime numbers? Let's have a look:
@@ -158,15 +158,15 @@ Here's the code for sieve in Clojure, defined lazily.
 
 ```clojure
 (defn sieve [inf-list]
-	(cons 
-	 (first inf-list)
-	 (lazy-seq
-	  (sieve (filter #(not (zero? (mod % (first inf-list)))) (rest inf-list))))))
+  (cons
+    (first inf-list)
+    (lazy-seq
+      (sieve (filter #(not (zero? (mod % (first inf-list)))) (rest inf-list))))))
 ```
 
-This defines a function `sieve` that takes an infinite list (or a `lazy sequence`) and returns a list that is `[ (first element of the infinite list), (sieve of the list filtered by what is not a multiple of the first element) ]`. Notice that before recursively running the function, we specified for Clojure that the returning list is a `lazy-seq` and that we don't want you to evaluate everything but instead only what we ask you for. 
+This defines a function `sieve` that takes an infinite list (or a `lazy sequence`) and returns a list that is `[ (first element of the infinite list), (sieve of the list filtered by what is not a multiple of the first element) ]`. Notice that before recursively running the function, we specified for Clojure that the returning list is a `lazy-seq` and that we don't want you to evaluate everything but instead only what we ask you for.
 
-And now when I run it:
+And now when we run it:
 
 ```clojure
 user=> (take 10 (sieve (drop 2 (range))))
