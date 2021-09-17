@@ -2,7 +2,7 @@
 layout: post
 title: Native Clojure with GraalVM
 description: Blazing startup time, and significantly less memory footprint
-image: lazy-inf-3.jpg
+image: graalvm.png
 ---
 
 ## Clojure
