@@ -6,14 +6,12 @@ image: graalvm.png
 ---
 
 ## Clojure
-Clojure is one of the most powerful programming languages out there. It's unique approach to functional programming, being a dynamically typed functional language is very powerful. It's a dialect of Lisp, one of oldest and most powerful languages itself. Lisp was one of the first to introduce concepts like first class functions or anonymous functions, garbage collection and others that are still used till this day.
+Clojure is one of the most powerful programming languages out there. It's unique approach to functional programming, being a dynamically typed language is very powerful. It's a dialect of Lisp, one of the oldest and most powerful languages itself. Lisp was one of the first to introduce concepts like first class functions or anonymous functions, garbage collection and more that are still used to this day.
 
 ![powerful_lisp](https://imgs.xkcd.com/comics/lisp_cycles.png)
 
 ## GraalVM
-[GraalVM](https://www.graalvm.org/) is a Java virtual machine that was develpoed by the Oracle Corporation in 2019. Although it's a JVM but it supports other languages like Clojure, NodeJS, and more.
-
-One of the very cool features of GraalVM is Ahead-of-Time (AOT) compilation, which is what we're gonna discuss here. Ahead of time compilation allows for a blazingly faster startup time and much less memory footprint.
+[GraalVM](https://www.graalvm.org/) is a Java virtual machine that was develpoed by the Oracle Corporation in 2019. One of the very cool features of GraalVM is Ahead-of-Time (AOT) compilation, which is what we're gonna discuss here. Ahead of time compilation allows for a blazingly faster startup time and much less memory footprint. Startup time is crucial in cases where you need your services to restart with zero to no down time, or as fast as possible, and in many other cases.
 
 ## Building a native image of your Clojure app
 Using GraalVM with Clojure is pretty easy and straightforward. Start by first downloading the GraalVM binaries for your selected Java version from https://github.com/graalvm/graalvm-ce-builds/releases, unpack it and make sure its in your system's `PATH`.
@@ -77,14 +75,14 @@ Hello World
 ./hello-world-0.1.0-SNAPSHOT-standalone  0.00s user 0.01s system 29% cpu 0.034 total
 ```
 
-from 2.17 seconds to less than a millisecond of runtime speed, amazing!
+from 2.17 seconds to less than a millisecond of startup speed, amazing!
 
-Building a native image of your clojure projects isn't always this straightforward, though. Some clojure libraries use dynamic class loading to load some of its components, and for that you'll need to supply a [reflection](https://medium.com/swlh/reflection-a-hidden-jvm-superpower-54a5a70fef0d) configuration file to GraalVM in order for it to load the class on runtime. 
+Building a native image of your clojure projects isn't always this straightforward, though. Some clojure libraries uses dynamic class loading to load some of its components, and for that you'll need to supply a [reflection](https://medium.com/swlh/reflection-a-hidden-jvm-superpower-54a5a70fef0d) configuration file to GraalVM in order for it to load the class on runtime.
 
 ## Native Carmine: Building a native image of clojure's redis client
-[Carmine](https://github.com/ptaoussanis/carmine) is a very powerful [Redis](https://redis.io/) client for Clojure. It's also one of the clojure libararies that uses dynamic class loading for some of its components (i.e: a class named `org.apache.commons.pool2.impl.EvictionPolicy`). Let's say how to build a native image of a clojure project that uses Carmine.
+[Carmine](https://github.com/ptaoussanis/carmine) is a very powerful [Redis](https://redis.io/) client for Clojure. It's also one of the clojure libraries that uses dynamic class loading for some of its components (i.e: a class named `org.apache.commons.pool2.impl.EvictionPolicy`). Let's say how to build a native image of a clojure project that uses Carmine.
 
-Let's start by generating a new clojure project:
+Let's start by generating a new project:
 
 `lein new carmine_graalvm`
 
@@ -165,7 +163,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: Unable to create 
 ...
 ```
 
-This is because as we mentioned, carmine uses dynamic class loading for that class. To successfully build a native image of our project, we'll need to supply a reflection configuration file that'll let GraalVM know that this class is a dynamic class and is going to be loaded in the future. Add this to a file named `reflect-config.json`:
+This is because as we mentioned, carmine uses dynamic class loading. To successfully build a native image of our project, we'll need to supply a reflection configuration file that'll let GraalVM know that this is a dynamic class and is going to be loaded in the future. Add this to a file named `reflect-config.json`:
 
 ```json
 [
@@ -190,7 +188,7 @@ native-image --report-unsupported-elements-at-runtime \
              -jar ./target/carmine_graalvm-0.1.0-SNAPSHOT-standalone.jar
 ```
 
-Comparing the time between the two variants
+Comparing the startup time between the two variants
 
 ```
 java -jar target/carmine_graalvm-0.1.0-SNAPSHOT-standalone.jar  5.81s user 0.34s system 237% cpu 2.591 total
@@ -198,6 +196,5 @@ java -jar target/carmine_graalvm-0.1.0-SNAPSHOT-standalone.jar  5.81s user 0.34s
 ./carmine_graalvm-0.1.0-SNAPSHOT-standalone  0.01s user 0.01s system 106% cpu 0.014 total
 ```
 
-From 5.81 seconds to less than a millisecond! You can also check the memory usage and compare it in the two processes.
+Amazing! From 5.81 seconds to less than a millisecond! You can also check the memory usage and compare it in the two processes.
 
-GraalVM can also be used in many other languages like Ruby, NodeJS, and many more!
