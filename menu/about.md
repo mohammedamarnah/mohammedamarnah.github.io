@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Welcome to Convex Human!
-secret: Knows Heba Abuhindi, an aimless fan of the SOX chicago team; knowing nothing about baseball but loving the team nonetheless.
 ---
 
 Convex Human is a blog that discusses different ideas related to Computer Science, Mathematics, System Design and Architecture.
