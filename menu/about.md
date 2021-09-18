@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Welcome to Convex Human!
+Knows Heba Abuhindi, an aimless fan of the SOX chicago team; knowing nothing about baseball but loving the team nonetheless.
 ---
 
 Convex Human is a blog that discusses different ideas related to Computer Science, Mathematics, System Design and Architecture.
@@ -10,7 +11,7 @@ My name is Mohammed Amarnah. I am a Computer Science graduate, a Software Engine
 
 ## Professional Experience
 ### Expedia Group Inc.
-#### Software Development Engineer
+#### Software Development Engineer II
 #### May 2021 - July 2021
 * Part of the Media Solutions Ad Engineering team.
 * Developed several features on the Hotels.com web app.
