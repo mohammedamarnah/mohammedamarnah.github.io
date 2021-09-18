@@ -9,9 +9,17 @@ Convex Human is a blog that discusses different ideas related to Computer Scienc
 My name is Mohammed Amarnah. I am a Computer Science graduate, a Software Engineer, and a lifetime student. My interest in Computer Science started when I was 14 years old. Programming led my interest to several other fields, and science in general. I was a participant of several science fairs and programming competitions ever since I was in high school. From robotics, to scientific research and competitive programming competitions, all curated a deeper appreciation of science and math in me.
 
 ## Professional Experience
+### Expedia Group Inc.
+#### Software Development Engineer
+#### May 2021 - July 2021
+* Part of the Media Solutions Ad Engineering team.
+* Developed several features on the Hotels.com web app.
+* Worked on the integration of a custom Ad server that handled Ad units and orders.
+* Started different initiatives to share interesting knowledge outside the context of Expedia.
+
 ### Jawaker
 #### Software Engineer
-#### February 2018 - Present
+#### February 2018 - May 2021
 * Designed and implemented several services in a distributed service-oriented architecture, using a stack that included: Clojure, Ruby on Rails, PostgreSQL, Redis, Cassandra, and other technologies.
 * Developed a strong understanding of both service-oriented and microservice architectures, along with how and when to use them.
 * Collaborated with the team on scaling our architecture to handle 5x the traffic during quarantine.
