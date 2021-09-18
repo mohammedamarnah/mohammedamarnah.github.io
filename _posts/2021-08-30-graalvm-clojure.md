@@ -53,8 +53,7 @@ Now, in order to build a native image, we have to build an uberjar first:
 And now you can run the `native-image` command:
 
 ```
-native-image --report-unsupported-elements-at-runtime \
-             --initialize-at-build-time \
+native-image --initialize-at-build-time \
              --no-server \
              -jar ./target/hello-world-0.1.0-SNAPSHOT-standalone.jar \
 ```
@@ -150,8 +149,7 @@ Now we can just build the source by running:
 and then build the native image by: 
 
 ```
-native-image --report-unsupported-elements-at-runtime \
-             --initialize-at-build-time \
+native-image --initialize-at-build-time \
              --no-server \
              -jar ./target/carmine_graalvm-0.1.0-SNAPSHOT-standalone.jar
 ```
@@ -181,8 +179,7 @@ and when building the native image we'll use:
 and that'll make our final build command:
 
 ```
-native-image --report-unsupported-elements-at-runtime \
-             --initialize-at-build-time \
+native-image --initialize-at-build-time \
              --no-server \
              -H:ConfigurationFileDirectories=./path/to/config/dir \
              -jar ./target/carmine_graalvm-0.1.0-SNAPSHOT-standalone.jar
