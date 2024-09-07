@@ -13,7 +13,6 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'github', link: 'https://github.com/mohammedamarnah/'}
-- {icon: 'twitter', link: 'https://twitter.com/m_amarnah'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/mohammed-amarnah-595006a5/'}
 - {icon: 'envelope', link: 'mailto:m.amarnah@gmail.com'}
 - {icon: 'rss-square', link: '/feed.xml'}
