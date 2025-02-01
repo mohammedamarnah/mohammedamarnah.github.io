@@ -6,7 +6,7 @@ disqus:
 google-ID: 'G-F1NDEXJTS6'
 
 menu:
-- {name: '∃', path: '', url: 'https://en.wikipedia.org/wiki/Existential_quantification'}
+- {name: '∃', path: 'menu', url: 'https://en.wikipedia.org/wiki/Existential_quantification'}
 - {name: 'Blog', path: 'menu', url: 'blog.html'}
 - {name: 'About', path: 'menu', url: 'about.html'}
 - {name: 'Contact', path: 'menu', url: 'contact.html'}
