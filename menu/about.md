@@ -12,4 +12,4 @@ Lately, I've been working with Java Spring Boot cloud-native applications. Befor
 
 Things I built include game engine backend logic in Clojure (for multiple board and card games like Monopoly Deal, Chess, and others), a distributed player matchmaking service in Clojure using a Redis queueing system, and recently, a large data migration pipeline that transferred 100M+ records from a Snowflake data lake into a Postgres database using S3, SQS, Kafka and Spring Boot. I also have experience leading and teaching groups of young kids and adults how to program through project-based courses that I designed.
 
-If you're interested in knowing more, you can find my resume [here](../assets/resume.pdf).
+If you're interested in knowing more, you can find my resume [here](https://docs.google.com/document/d/1UhR3peBFVA9Rn3iYiLsYswrvta3ADFEF363Al8U1kWw/edit?usp=sharing).
